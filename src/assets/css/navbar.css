@@ -1,0 +1,78 @@
+/*Main nav head*/
+.nav-head{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template: "logo contenido redes" / 300px 1fr 200px;
+}
+.logo{
+    grid-area:logo;
+    background: red;
+}
+.contenido{
+    grid-area: contenido;
+    background: green;
+}
+.redes{
+    grid-area: redes;
+    background: blueviolet;
+}
+
+/*Main Nav*/
+.nav{
+    background: black;
+    color: white;
+    border-radius: 0 0 5px 5px;
+    grid-template:"navbar" 1fr;
+}
+.main-nav{
+    grid-area: navbar;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+.main-nav div{
+    padding: 1em;
+}
+.main-nav div a{
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+}
+.main-nav div:hover{
+    background: gray;
+}
+
+
+/*Menu Button*/
+.menu-btn{
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    justify-self: flex-start;
+    width: 50px;
+    height: 50px;
+border:1px solid rgb(52, 52, 52);
+border-radius: 5px;
+display: none;
+}
+.menu-btn a{
+    font-size: 2em;
+    padding-left:0.3em ;
+    color: white;
+    text-align: center;
+    line-height: 1.8em;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+.menu-btn{
+    display: block;
+}
+.menu-btn:hover{
+    background: rgb(48, 48, 48);
+}
+.main-nav div{
+    display: none;
+}
+}
