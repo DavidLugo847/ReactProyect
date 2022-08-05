@@ -2,6 +2,8 @@
 
 //Components
 import Navbar from './components/Navbar';
+import LoginForm from './components/loginForm';
+
 
 
 
@@ -12,7 +14,7 @@ function App() {
 
 <div className='components'>
   <Navbar/>
-  
+  <LoginForm/>
   </div>
   );
 }
